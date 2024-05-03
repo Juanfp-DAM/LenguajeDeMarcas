@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/formularioCalculadora/formularioCalculadora.css">
+    <title>formularioCalculadora</title>
+</head>
+
+<body>
+
+    <main>
+        
+        <label for="Sumando1">
+            <input id="Sumando1" type="number" placeholder="Sumando1"></label>
+
+        <label for="Sumando2">
+            <input id="Sumando2" type="number" placeholder="Sumando2"></label>
+        <button type="submit" value="Suma" onclick="suma()">Suma</button>
+
+        <p id="resultadoSuma">Resultado</p>
+        <!--<label for="Resultado">
+                <input id="Resultado" type="number"></label>-->
+
+        <div class="division">
+            <input id="dividendo" type="number">
+            <input id="divisor" type="number">
+            <button type="Submit" value="Division" onclick="division()">División</button>
+            <p id="cociente">Resultado</p>
+        </div>
+
+        <div class="ec2">
+            <input id="seG" type="number"> 
+            <input id="priG" type="number">
+            <input id="indeP" type="number">
+            <button type="Submit" value="ecuacion2G" onclick="ecuacion2G()">Resultado Ec</button>
+            <p id="solucion">Resultado</p>
+        </div>
+
+
+        <div class="arrays">
+            <label for="asignatura1"> <select id="asignatura1">
+                <option>Elija una asignatura</option>
+                <option value="1" id="asignaturaA1">Base de Datos</option>
+                <option value="2" id="asignaturaA2">Lenguaje de Marcas</option>
+                <option value="3" id="asignaturaA3">Programación</option>
+                <option value="4" id="asignaturaA4">Entornos de Desarrollo</option>
+                <option value="5" id="asignaturaA5">Sistemas informáticos</option>
+            </select></label>
+            <label for="asignatura2"> <select id="asignatura2">
+                <option value="">Elija una asignatura</option>
+                <option value="1" id="asignaturaB1">Base de Datos</option>
+                <option value="2" id="asignaturaB2">Lenguaje de Marcas</option>
+                <option value="3" id="asignaturaB3">Programación</option>
+                <option value="4" id="asignaturaB4">Entornos de Desarrollo</option>
+                <option value="5" id="asignaturaB5">Sistemas informáticos</option>
+            </select></label>
+            <button type="Submit" value="asignaturaInfo" onclick="arrayAsignatura()">Alumnos coinciden</button>
+            <p id="alumCoinciden">Resultado</p>
+        </div>
+
+
+        <div class="cuadrado">
+            <h3>Vamos a dibujar un cuadrado.</h3>
+            <label for="unCaracter">
+                <input id="caracter" type="text" placeholder="Introduzca un carácter">
+            </label>
+            <label for="columnas">
+                <input id="nColumnas" type="number" placeholder="Número de columnas.">
+            </label>
+            <button type="Submit" value="cuadradoInfo" onclick="dibujaCuadrado()">Enviar</button>
+            <p id="dibujoDelCuadrado">Aquí pintaremos su cuadrado.</p>
+        </div>
+
+
+    </main>
+</body>
+<script src="../../js/FormularioCalculadora/formCalculadora.js"></script>
+
+</html>

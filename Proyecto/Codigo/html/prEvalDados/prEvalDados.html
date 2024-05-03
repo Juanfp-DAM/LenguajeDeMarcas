@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<htlm lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/prEvalDados/prEvalDados.css">
+        <title>Juego de dados</title>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>EL JUEGO DE LOS DADOS</h1>
+        </header>
+        <main>
+            <div class="jugador1">
+                <p>Jugador 1</p>
+                <img src="../../img/prEvaluableDados/d1.png" ALT="dado1">
+                <p>Seleccione la cantidad de dados que quiere lanzar: </p>
+                <label for="lanzaJ1"> <select id="lanzaJ1">
+                    <option>Elija la cantidad de dados a tirar</option>
+                    <option value="1" class="j1d">Lanzar 1 dado</option>
+                    <option value="2" class="j1d">Lanzar 2 dados</option>
+                    <option value="3" class="j1d">Lanzar 3 dados</option>
+                    <option value="4" class="j1d">Lanzar 4 dados</option>
+                    <option value="5" class="j1d">Lanzar 5 dado</option>
+                    <option value="6" class="j1d">Lanzar 6 dados</option>
+                    <option value="7" class="j1d">Lanzar 7 dados</option>
+                    <option value="8" class="j1d">Lanzar 8 dados</option>
+                    <option value="9" class="j1d">Lanzar 9 dados</option>
+                </select></label>
+                <button type="Submit" value="valorTirada" onclick="resultadoJ1()">Lanzar</button>
+                <p id="muestraj1">Resultado de su tirada:</p>
+                <p id="sumaTiradasJ1"></p>
+            </div>
+            <div class="jugador2">
+                <p>Jugador 2</p>
+                <img src="../../img/prEvaluableDados/d1.png" ALT="dado1">
+                <p>Seleccione la cantidad de dados que quiere lanzar: </p>
+                <label for="lanzaJ2"> <select id="lanzaJ2">
+                    <option>Elija la cantidad de dados a tirar</option>
+                    <option value="1" class="j2d">Lanzar 1 dado</option>
+                    <option value="2" class="j2d">Lanzar 2 dados</option>
+                    <option value="3" class="j2d">Lanzar 3 dados</option>
+                    <option value="4" class="j2d">Lanzar 4 dados</option>
+                    <option value="5" class="j2d">Lanzar 5 dado</option>
+                    <option value="6" class="j2d">Lanzar 6 dados</option>
+                    <option value="7" class="j2d">Lanzar 7 dados</option>
+                    <option value="8" class="j2d">Lanzar 8 dados</option>
+                    <option value="9" class="j2d">Lanzar 9 dados</option>
+                </select></label>
+                <button type="Submit" value="valorTirada" onclick="resultadoJ2()">Lanzar</button>
+                <p id="muestraj2">Resultado de su tirada:</p>
+                <p id="sumaTiradasJ2"></p>
+            </div>
+
+            <div class="duelo">
+                <p><h4>En la primera ronda de este duelo de titanes, salió vencedor:</h4></p>
+                <p id="ronda1"></p>
+                <p><h3>El resultado de esta épica batalla es:</h3></p>
+                <p id="ganador"></p>
+
+            </div>
+        </main>
+
+
+
+
+    </body>
+    <script src="../../js/prEvalDados/prEvalDados.js"></script>
+
+</htlm>
