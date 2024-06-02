@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(to bottom,rgb(132, 72, 75), rgb(168, 97, 101) );
+}
+
+
+header{
+    height:10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(122, 63, 66);
+}
+
+main{
+    height:85%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.calendario{
+    width:60%;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(186, 120, 248);
+}
+
+.fechaMA{
+    width:100%;
+    height:15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    background-color: rgb(229 209 227 / 88%);
+    border-radius: 19px;
+    box-shadow: 0px 3px 2px rgba(50, 60, 73, 0.7);
+}
+
+h3{
+    font-size: x-large;
+    margin-left: 5%;
+}
+
+
+#atras, #siguiente{
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    margin:5px;
+    cursor:pointer;
+    font-size: larger;
+    background-color: rgba(207, 157, 255, 0.822);
+    color: rgb(253, 237, 212);
+    border-radius: 25%;
+    border-style: none;
+    box-shadow: 2px 2px 5px rgba(49, 1, 4, 0.308);
+    
+}
+
+#atras:hover, #siguiente:hover{
+    background-color: rgba(140, 68, 207, 0.897);
+    transform:translateY(-2px);
+}
+
+.fechas{
+    width: 90%;
+    height: 85%;
+    padding: 2vh 1vh 1vh;
+}
+
+.fechas ul{
+    display:flex;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: rgba(206, 155, 255, 0.767);
+    text-align: center;
+}
+
+.fechas .semana li{
+    font-size: larger;
+    font-weight: 400;
+    border-bottom: solid 2px rgba(215, 174, 253, 0.829) ;
+}
+
+.fechas ul li{
+    position:relative;
+    width: calc(100%/7);
+}
+
+.fechas .semana{
+    height: 15%;
+    align-items: center;
+}
+
+.fechas .dias {
+    height:80%;
+    align-items:center;
+    
+}
+.fechas .dias li{
+    cursor:pointer;
+    z-index: 1; 
+}
+.fechas .dias li::before{
+    position: absolute;
+    content:"";
+    height:40px;
+    width: 40px;
+    top:50%;
+    left:50%;
+    z-index:-1; 
+    border-radius:50%;
+    transform: translate(-50%, -50%);  
+}
+
+
+.fechas .dias li.desactivado{
+    color:rgba(211, 172, 247, 0.884);
+}
+
+.fechas .dias li.hoy{
+    color:white;
+}
+
+.fechas .dias li.hoy::before{
+    background:rgb(105, 69, 117);
+    
+}
+
+
+.fechas .dias li.evento{
+    position:relative;
+    color:white;
+}
+.fechas .dias li.evento::before{
+    background: #f362cf;
+}
+
+
+footer{
+    padding:1rem;
+    text-align: center;
+    background:rgb(88, 45, 47);
+    color:rgb(194, 163, 163);
+}
+

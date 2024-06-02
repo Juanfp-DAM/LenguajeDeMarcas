@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../../css/calendario/calendarioInversion.css">
+</head>
+
+<body>
+    <header>
+        <h1>CALENDARIO</h1>
+    </header>
+
+    <main>
+        <div class="calendario">
+            <div class="fechaMA">
+                <h3 class = "mesAnyo"></h3>
+                <div class="botones">
+                    <button id="atras" onclick="atras()">&#60;</button>
+                    <button id="siguiente" onclick="siguiente()">&#62;</button>
+                </div>
+            </div>
+            <div class="fechas">
+                <ul class="semana">
+                    <li>L</li>
+                    <li>M</li>
+                    <li>Mx</li>
+                    <li>J</li>
+                    <li>V</li>
+                    <li>S</li>
+                    <li>D</li>
+                </ul>
+                <ul class="dias"></ul>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Trabajo realizado por Juan Ferrando.</p>
+    </footer>
+
+    
+</body>
+<script src="../../js/calendario/calendarioInversion.js"></script>
+</html>
